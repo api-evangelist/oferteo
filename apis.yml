@@ -1,8 +1,32 @@
 aid: oferteo
 name: Oferteo
-description: Oferteo is a company surfaced as a portfolio company of point-nine and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Oferteo (oferteo.pl) is a Polish online services marketplace that connects
+  people and businesses seeking services (Zlecający) with local contractors and
+  service providers (Wykonawcy). Clients post a request across hundreds of
+  categories — construction and renovation, IT, legal, health, events, transport
+  and more — and matched providers respond with competitive quotes. The platform
+  layers on verified reviews, a buyer-protection program (Ochrona Zlecających),
+  and native iOS/Android apps for both sides of the marketplace. Oferteo operates
+  nationwide across Poland and reports tens of millions of submitted requests and
+  offers, millions of registered clients, and hundreds of thousands of registered
+  providers. It was surfaced as a portfolio company of Point Nine and added to the
+  API Evangelist network. No public developer API surface was found during
+  enrichment; this profile currently carries verified identity, website
+  link-properties, and infrastructure/security probes.
 url: https://raw.githubusercontent.com/api-evangelist/oferteo/refs/heads/main/apis.yml
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.oferteo.pl/favicon.ico
 x-type: company
 x-source: vc-portfolio
 x-backed-by:
@@ -11,9 +35,16 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
+- Marketplace
+- Services
+- Poland
+- Contractors
+- Quotes
+- Reviews
+- Local Services
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -22,4 +53,25 @@ maintainers:
   email: info@apis.io
 common:
 - type: Website
-  url: http://www.oferteo.pl
+  url: https://www.oferteo.pl
+- type: Pricing
+  url: https://www.oferteo.pl/cennik
+- type: SignUp
+  url: https://www.oferteo.pl/rejestracja
+- type: Login
+  url: https://www.oferteo.pl/logowanie
+- type: TermsOfService
+  url: https://www.oferteo.pl/regulamin.html
+- type: PrivacyPolicy
+  url: https://www.oferteo.pl/polityka-ochrony-prywatnosci
+- type: Support
+  url: https://www.oferteo.pl/kontakt.html
+- type: DomainSecurity
+  url: security/oferteo-domain-security.yml
+- type: WellKnown
+  url: well-known/oferteo-well-known.yml
+x-enrichment:
+  date: '2026-07-20'
+  status: minimal
+  artifacts_added: 2
+  pass: local-v1
