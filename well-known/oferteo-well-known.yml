@@ -2,18 +2,24 @@ generated: '2026-07-20'
 method: probed
 source: live probes of https://www.oferteo.pl/.well-known/*
 host: https://www.oferteo.pl
-documents:
-- path: /.well-known/security.txt
-  status: 404
-- path: /.well-known/openid-configuration
-  status: 404
-- path: /.well-known/oauth-authorization-server
-  status: 404
-- path: /.well-known/api-catalog
-  status: 404
-- path: /.well-known/ai-plugin.json
-  status: 404
-notes: >-
-  Oferteo.pl is a Polish consumer/SMB services marketplace (Cloudflare-fronted).
-  No /.well-known discovery documents are published and no public API surface was
-  found (no developer portal, no /api endpoint, robots.txt lists no API paths).
+notes: Oferteo.pl is a Polish consumer/SMB services marketplace (Cloudflare-fronted). No /.well-known
+  discovery documents are published and no public API surface was found (no developer portal, no /api
+  endpoint, robots.txt lists no API paths).
+hosts:
+- host: https://www.oferteo.pl
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+x-shape-fix:
+  converted: '2026-08-20'
+  from: documents
+  note: Rewritten into hosts[] -> documents[], the only shape well_known_docs() in score.rb reads. A served
+    .well-known surface recorded in any other shape scores as absent.
