@@ -1,0 +1,11 @@
+[
+  {
+    "repo": "oferteo",
+    "captured_at": "2026-10-11T191219",
+    "source_url": "https://www.oferteo.pl",
+    "source_type": "Website",
+    "file": "oferteo-2026-10-11T191219.png",
+    "bytes": 400100,
+    "capture": "playwright-local"
+  }
+]
